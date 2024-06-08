@@ -302,8 +302,14 @@ Tab3:AddBind({
 
 
 ---//CREDITS 
+Tab4:AddButton({
+	Name = "Copy link to discord",
+	Callback = function()
+      	setclipboard('https://discord.gg/Y6t5gsug')
+	end
+})
 Tab4:AddLabel("Made by minecraft_minegun#0")
-Tab4:AddLabel("Subscribe to @fallenkingchannel3627 on Youtube!")
+Tab4:AddLabel("Subscribe to @fallenkingchannel3627")
 
 OrionLib:MakeNotification({
 	Name = "GUI",
@@ -311,3 +317,11 @@ OrionLib:MakeNotification({
 	Image = "rbxassetid://4483345998",
 	Time = 5
 })
+OrionLib:MakeNotification({
+	Name = "GUI",
+	Content = "Copied link to the discord server!",
+	Image = "rbxassetid://4483345998",
+	Time = 5
+})
+setclipboard('https://discord.gg/Y6t5gsug')
+OrionLib:Init()
